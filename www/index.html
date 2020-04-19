@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HIV Clinical Staging</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body>
+    <div class="container">
+
+      <div class="alert alert-primary mt-2 text-center">
+        <h4>WHO clinical staging of HIV disease in adults, adolescents and children</h4>
+      </div>
+
+        <div class="accordion" id="major-division">
+          <div class="card">
+            <div class="card-header" id="adult">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#adult-criteria" aria-expanded="true" aria-controls="adult-criteria">
+                  <span class="lead">Criteria for Adults</span>
+                </button>
+              </h2>
+            </div>
+
+            <div id="adult-criteria" class="collapse" aria-labelledby="adult" data-parent="#major-division">
+
+              <div class="card-body">
+                <div id="adult-criteria-list" class="list-group">
+                  <li data-stage="adult-1" data-value="none" class="list-group-item list-group-item-action" id="adult-none" style="cursor: pointer">Asymptomatic</li>
+                  <a href="#" data-stage="adult-1" data-value="pgl" class="list-group-item list-group-item-action">Persistent Generalized Lymphadenopathy</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group wl">Unexplained Weight Loss
+                      <a href="#" data-stage="adult-2" data-value="wl00" class="list-group-item list-group-item-action">&lt; 10% weight loss</a>
+                      <a href="#" data-stage="adult-3" data-value="wl10" class="list-group-item list-group-item-action">10% - 20% weight loss</a>
+                      <a href="#" data-stage="adult-4" data-value="wl20" class="list-group-item list-group-item-action">&gt; 20% weight loss</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="adult-2" data-value="rti" class="list-group-item list-group-item-action">Recurrent Respiratory Tract Infections</a>
+                  <a href="#" data-stage="adult-2" data-value="hzv" class="list-group-item list-group-item-action">Herpes Zoster</a>
+                  <a href="#" data-stage="adult-2" data-value="ac" class="list-group-item list-group-item-action">Angular Cheilitis</a>
+                  <a href="#" data-stage="adult-2" data-value="ou" class="list-group-item list-group-item-action">Recurrent Oral Ulcerations</a>
+                  <a href="#" data-stage="adult-2" data-value="ppe" class="list-group-item list-group-item-action">Papular Pruritic Eruption</a>
+                  <a href="#" data-stage="adult-2" data-value="fni" class="list-group-item list-group-item-action">Fungal Nail Infections</a>
+                  <a href="#" data-stage="adult-2" data-value="sd" class="list-group-item list-group-item-action">Seborrhoeic Dermatitis</a>
+                  <a href="#" data-stage="adult-3" data-value="diarr" class="list-group-item list-group-item-action">Unexplained Chronic Diarrhea &gt; 1 month</a>
+                  <a href="#" data-stage="adult-3" data-value="fever" class="list-group-item list-group-item-action">Unexplained Persistent Fever (intermittent / constant &gt; 1 month)</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Mucosal Candidiasis
+                      <a href="#" data-stage="adult-3" data-value="oc" class="list-group-item list-group-item-action">Persistent Oral Candidiasis</a>
+                      <a href="#" data-stage="adult-4" data-value="ec" class="list-group-item list-group-item-action">Oesophageal Candidiasis</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="adult-3" data-value="ohl" class="list-group-item list-group-item-action">Oral Hairy Leukoplakia</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Tuberculosis
+                      <a href="#" data-stage="adult-3" data-value="ptb" class="list-group-item list-group-item-action">Pulmonary Tuberculosis</a>
+                      <a href="#" data-stage="adult-4" data-value="xptb" class="list-group-item list-group-item-action">Extra-Pulmonary Tuberculosis</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Bacterial Infection
+                      <a href="#" data-stage="adult-3" data-value="bact" class="list-group-item list-group-item-action">Severe Bacterial Infections</a>
+                      <a href="#" data-stage="adult-4" data-value="pneum" class="list-group-item list-group-item-action">Recurrent Severe Bacterial Pneumonia</a>
+                      <a href="#" data-stage="adult-4" data-value="sepsis" class="list-group-item list-group-item-action">Recurrent Speticemia</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="adult-3" data-value="us" class="list-group-item list-group-item-action">Acute Necrotizing Ulcerative Stomatitis, gingivitis or periodontosis</a>
+                  <a href="#" data-stage="adult-3" data-value="anem" class="list-group-item list-group-item-action">Unexplained Anemia, Neutropenia and/or Thrombocytopenia</a>
+                  <a href="#" data-stage="adult-4" data-value="pcp" class="list-group-item list-group-item-action">Pneumocystis Pneumonia</a>
+                  <a href="#" data-stage="adult-4" data-value="hsv" class="list-group-item list-group-item-action">Chronic Herpes Simplex</a>
+                  <a href="#" data-stage="adult-4" data-value="ks" class="list-group-item list-group-item-action">Kaposi Sarcoma</a>
+                  <a href="#" data-stage="adult-4" data-value="cmv" class="list-group-item list-group-item-action">Cytomegalovirus Infection</a>
+                  <a href="#" data-stage="adult-4" data-value="cnstoxo" class="list-group-item list-group-item-action">CNS Toxoplasmosis</a>
+                  <a href="#" data-stage="adult-4" data-value="hivenceph" class="list-group-item list-group-item-action">HIV Encephalopathy</a>
+                  <a href="#" data-stage="adult-4" data-value="xpc" class="list-group-item list-group-item-action">Extrapulmonary Cryptococcosis</a>
+                  <a href="#" data-stage="adult-4" data-value="ntm" class="list-group-item list-group-item-action">Disseminated NTM Infection</a>
+                  <a href="#" data-stage="adult-4" data-value="pmle" class="list-group-item list-group-item-action">Progressive Multifocal Leucoencephalopathy</a>
+                  <a href="#" data-stage="adult-4" data-value="crypspor" class="list-group-item list-group-item-action">Chronic Cryprosporidiosis</a>
+                  <a href="#" data-stage="adult-4" data-value="isospor" class="list-group-item list-group-item-action">Chronic Isosporiasis</a>
+                  <a href="#" data-stage="adult-4" data-value="myco" class="list-group-item list-group-item-action">Dissemianted Mycosis</a>
+                  <a href="#" data-stage="adult-4" data-value="lymph" class="list-group-item list-group-item-action">Lymphoma</a>
+                  <a href="#" data-stage="adult-4" data-value="hivan" class="list-group-item list-group-item-action">Symptomatic HIV Associated Nephropathy or Cardiomyopathy</a>
+                  <a href="#" data-stage="adult-4" data-value="cerv" class="list-group-item list-group-item-action">Invasive Cervical Carcinoma</a>
+                  <a href="#" data-stage="adult-4" data-value="vl" class="list-group-item list-group-item-action">Atypical Disseminated Leishmaniasis</a>
+                </div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h4 class="card-title" id="adult-result"></h4>
+                    <button type="button" class="btn btn-primary" id="adult-calc">Calculate Stage</button>
+                    <button type="button" class="btn btn-primary" id="adult-clear">Clear All</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!--Children-->
+
+          <div class="card">
+            <div class="card-header" id="child">
+              <h2 class="mb-0">
+                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#child-criteria" aria-expanded="false" aria-controls="child-criteria">
+                  <span class="lead">Criteria for Children</span>
+                </button>
+              </h2>
+            </div>
+
+            <div id="child-criteria" class="collapse" aria-labelledby="child" data-parent="#major-division">
+
+              <div class="card-body">
+                <div id="child-criteria-list" class="list-group">
+                  <li data-stage="child-1" data-value="none" class="list-group-item list-group-item-action" id="child-none" style="cursor: pointer">Asymptomatic</li>
+                  <a href="#" data-stage="child-1" data-value="pgl" class="list-group-item list-group-item-action">Persistent Generalized Lymphadenopathy</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group wl">Unexplained Weight Loss
+                      <a href="#" data-stage="child-3" data-value="mal" class="list-group-item list-group-item-action">Unexplained Moderate Malnutrition</a>
+                      <a href="#" data-stage="child-4" data-value="wast" class="list-group-item list-group-item-action">Unexplained Severe Wasting</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="child-2" data-value="hepat" class="list-group-item list-group-item-action">Unexplained Persistent Hepatosplenomegaly</a>
+                  <a href="#" data-stage="child-2" data-value="rti" class="list-group-item list-group-item-action">Recurrent or Chronic Respiratory Tract Infections</a>
+                  <a href="#" data-stage="child-2" data-value="hzv" class="list-group-item list-group-item-action">Herpes Zoster</a>
+                  <a href="#" data-stage="child-2" data-value="lge" class="list-group-item list-group-item-action">Lineal Gingival Erythema</a>
+                  <a href="#" data-stage="child-2" data-value="ou" class="list-group-item list-group-item-action">Recurrent Oral Ulcerations</a>
+                  <a href="#" data-stage="child-2" data-value="ppe" class="list-group-item list-group-item-action">Papular Pruritic Eruption</a>
+                  <a href="#" data-stage="child-2" data-value="fni" class="list-group-item list-group-item-action">Fungal Nail Infections</a>
+                  <a href="#" data-stage="child-2" data-value="wart" class="list-group-item list-group-item-action">Extensive Wart Virus Infection</a>
+                  <a href="#" data-stage="child-2" data-value="mc" class="list-group-item list-group-item-action">Extensive Molluscum Contagiosum</a>
+                  <a href="#" data-stage="child-2" data-value="prtd" class="list-group-item list-group-item-action">Unexplained Peristent Protid Infection</a>
+                  <a href="#" data-stage="child-3" data-value="diarr" class="list-group-item list-group-item-action">Unexplained Persistent Diarrhea &gt; 14 days</a>
+                  <a href="#" data-stage="child-3" data-value="fever" class="list-group-item list-group-item-action">Unexplained Persistent Fever (intermittent / constant &gt; 1 month)</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Mucosal Candidiasis
+                      <a href="#" data-stage="child-3" data-value="oc" class="list-group-item list-group-item-action">Persistent Oral Candidiasis</a>
+                      <a href="#" data-stage="child-4" data-value="ec" class="list-group-item list-group-item-action">Oesophageal Candidiasis</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="child-3" data-value="ohl" class="list-group-item list-group-item-action">Oral Hairy Leukoplakia</a>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Tuberculosis
+                      <a href="#" data-stage="child-3" data-value="ptb" class="list-group-item list-group-item-action">Pulmonary Tuberculosis</a>
+                      <a href="#" data-stage="child-3" data-value="lntb" class="list-group-item list-group-item-action">Lymph Node Tuberculosis</a>
+                      <a href="#" data-stage="child-4" data-value="xptb" class="list-group-item list-group-item-action">Extra-Pulmonary Tuberculosis</a>
+                    </div>
+                  </div>
+                  <div class="list-group-item list-group-item-action">
+                    <div class="list-group">Bacterial Infection
+                      <a href="#" data-stage="child-4" data-value="bact" class="list-group-item list-group-item-action">Recurrent Severe Bacterial Infections</a>
+                      <a href="#" data-stage="child-3" data-value="pneum" class="list-group-item list-group-item-action">Recurrent Severe Bacterial Pneumonia</a>
+                      <a href="#" data-stage="child-4" data-value="sepsis" class="list-group-item list-group-item-action">Recurrent Speticemia</a>
+                    </div>
+                  </div>
+                  <a href="#" data-stage="child-3" data-value="us" class="list-group-item list-group-item-action">Acute Necrotizing Ulcerative Gingivitis or Periodontosis</a>
+                  <a href="#" data-stage="child-3" data-value="anem" class="list-group-item list-group-item-action">Unexplained Anemia, Neutropenia and/or Thrombocytopenia</a>
+                  <a href="#" data-stage="child-3" data-value="intpneum" class="list-group-item list-group-item-action">Symptomatic Lymphoid Interstitial Pneumonitis</a>
+                  <a href="#" data-stage="child-3" data-value="bronch" class="list-group-item list-group-item-action">Chronic HIV Associated Lung Disease, Including Bronchiectasis</a>
+                  <a href="#" data-stage="child-4" data-value="pcp" class="list-group-item list-group-item-action">Pneumocystis Pneumonia</a>
+                  <a href="#" data-stage="child-4" data-value="hsv" class="list-group-item list-group-item-action">Chronic Herpes Simplex</a>
+                  <a href="#" data-stage="child-4" data-value="ks" class="list-group-item list-group-item-action">Kaposi Sarcoma</a>
+                  <a href="#" data-stage="child-4" data-value="cmv" class="list-group-item list-group-item-action">Cytomegalovirus Infection</a>
+                  <a href="#" data-stage="child-4" data-value="cnstoxo" class="list-group-item list-group-item-action">CNS Toxoplasmosis</a>
+                  <a href="#" data-stage="child-4" data-value="hivenceph" class="list-group-item list-group-item-action">HIV Encephalopathy</a>
+                  <a href="#" data-stage="child-4" data-value="xpc" class="list-group-item list-group-item-action">Extrapulmonary Cryptococcosis</a>
+                  <a href="#" data-stage="child-4" data-value="ntm" class="list-group-item list-group-item-action">Disseminated NTM Infection</a>
+                  <a href="#" data-stage="child-4" data-value="pmle" class="list-group-item list-group-item-action">Progressive Multifocal Leucoencephalopathy</a>
+                  <a href="#" data-stage="child-4" data-value="crypspor" class="list-group-item list-group-item-action">Chronic Cryprosporidiosis</a>
+                  <a href="#" data-stage="child-4" data-value="isospor" class="list-group-item list-group-item-action">Chronic Isosporiasis</a>
+                  <a href="#" data-stage="child-4" data-value="myco" class="list-group-item list-group-item-action">Dissemianted Endemic Mycosis</a>
+                  <a href="#" data-stage="child-4" data-value="lymph" class="list-group-item list-group-item-action">Cerebral or B-cell Non-Hodgkin Lymphoma</a>
+                  <a href="#" data-stage="child-4" data-value="hivan" class="list-group-item list-group-item-action">HIV Associated Nephropathy or Cardiomyopathy</a>
+                </div>
+                <div class="card">
+                  <div class="card-body text-center">
+                    <h4 class="card-title" id="child-result"></h4>
+                    <button type="button" class="btn btn-primary" id="child-calc">Calculate Stage</button>
+                    <button type="button" class="btn btn-primary" id="child-clear">Clear All</button>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="alert alert-secondary mt-3">
+          <p>Use the criteria for children if age &lt; 15 years.</p>
+        </div>
+        <div id="ref" class="alert alert-secondary" style="cursor: pointer; max-width: 100%">
+          <p style="word-wrap: break-word">Adapted from WHO case definitions of HIV for surveillance and revised clinical staging and immunological classification of HIV-related disease in adults and children. Geneva, World Health Organization, 2007 (www.who.int/hiv/pub/guidelines/HIVstaging150307.pdf).</p>
+        </div>
+      </div>
+  </body>
+</html>
